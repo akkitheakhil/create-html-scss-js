@@ -14,8 +14,11 @@ const repoURL = 'https://github.com/akkitheakhil/html-scss-js';
 
 runCommand('git', ['clone', repoURL, name])
   .then(() => {
+    return runCommand('rm', ['-rf', `${name}/.git`]);
+  }).then(() => {
     console.log('Installing dependencies...');
     return runCommand('npm', ['install'], {
+        shell: true, 
       cwd: process.cwd() + '/' + name
     });
   }).then(() => {
@@ -24,11 +27,9 @@ runCommand('git', ['clone', repoURL, name])
     console.log('To get started:');
     console.log('cd', name);
     console.log('npm start');
-  }).catch((err) => {
-    console.log(err);
   });
 
-function runCommand(command, args, options = undefined) {
+function runCommand(command, args, options = {shell: true}) {
   const spawned = spawn(command, args, options);
 
   return new Promise((resolve) => {
