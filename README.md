@@ -1,6 +1,6 @@
 # create-html-scss-js
 
-A CLI to automatically clone the [html-scss-js](https://github.com/akkitheakhil/html-scss-js) bpilerplate code.
+A CLI to automatically clone the [html-scss-js](https://github.com/akkitheakhil/html-scss-js) boilerplate code.
 
 ## Installation
 
