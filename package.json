@@ -1,0 +1,25 @@
+{
+  "name": "create-html-scss-js",
+  "version": "1.0.0",
+  "description": "A CLI to clone html-scss-js boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akkitheakhil/create-html-scss-js.git"
+  },
+  "keywords": [
+    "HTML",
+    "SCSS",
+    "JS",
+    "Boilerplate"
+  ],
+  "author": "Akhil Padmanabhan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/akkitheakhil/create-html-scss-js/issues"
+  },
+  "homepage": "https://github.com/akkitheakhil/create-html-scss-js#readme"
+}
