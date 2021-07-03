@@ -26,6 +26,8 @@ runCommand('git', ['clone', repoURL, name])
     console.log('To get started:');
     console.log('cd', name);
     console.log('npm start');
+  }).catch((err) => {
+    console.log(err);
   });
 
 function runCommand(command, args, options = undefined) {
