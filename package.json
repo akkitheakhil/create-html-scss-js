@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "A CLI to clone html-scss-js boilerplate",
   "main": "index.js",
+  "bin": {
+    "create-html-scss-js": "index.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
