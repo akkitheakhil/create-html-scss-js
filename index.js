@@ -14,8 +14,6 @@ const repoURL = 'https://github.com/akkitheakhil/html-scss-js';
 
 runCommand('git', ['clone', repoURL, name])
   .then(() => {
-    return runCommand('rm', ['-rf', `${name}/.git`]);
-  }).then(() => {
     console.log('Installing dependencies...');
     return runCommand('npm', ['install'], {
       cwd: process.cwd() + '/' + name
